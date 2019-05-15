@@ -217,7 +217,7 @@ nav.valikko {
     top: 0;
     z-index: 999;
     margin: 10px 0 0 0;
-    height: 50px;
+    height: 55px;
     background-color: rgba(255, 255, 255, 0);
     font-size: 16px;
     font-weight: bold;
@@ -229,12 +229,12 @@ nav.valikko.scrolled {
     box-shadow: 0 2px 11px 0px rgba(0,0,0,.164);
 }
 .valikko .menu {
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0 auto;;
 }
 .logo {
     float: left;
-    height: 50px;
+    height: 55px;
     margin: 0 20px 0 0px;
 }
 .valikko ul {
@@ -265,7 +265,7 @@ nav.valikko.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 55px;
     padding:0 8px;
     font-family: 'Open Sans';
     font-weight: 500;
@@ -306,6 +306,7 @@ nav.valikko.scrolled {
     transform: skew(0deg);
 } #tstvalikko ul.sub-menu li.menu-item a {
     float: none;
+    height: 50px;
     padding: 0 10px;
     font-size: 15px;
     color: #f90;
@@ -329,7 +330,7 @@ nav.valikko.scrolled {
 .dropdown_buttons {
     float: right;
     margin: 0;
-    line-height: 50px;
+    line-height: 55px;
 }
 .infobtn {
     padding: 7px 13px 7px 13px;
