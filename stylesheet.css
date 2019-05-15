@@ -92,10 +92,11 @@ a.link:hover {
   }
 
 section.hero_container {
-    height: auto;
+    height: 66%;
 }
 .hero {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -110,13 +111,13 @@ section.hero_container {
     top: 38%;
 }
 .slogan_small {
-    font-size: 34px;
+    font-size: 37px;
     margin: 0;
     padding: 0;
 }
 .slogan_big {
-    font-size: 45px;
-    line-height: 43px;
+    font-size: 50px;
+    line-height: 48px;
     margin: 0;
     padding: 0;
 }
@@ -141,7 +142,7 @@ section.hero_container {
 
 }
 .row-container {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 40px auto;
 }
 .row-link {
@@ -169,7 +170,7 @@ section.hero_container {
 }
 .col {
     width: 32%;
-    max-width: 417px;
+    max-width: 450px;
     min-height: 500px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
