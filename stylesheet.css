@@ -138,11 +138,9 @@ section.hero_container {
     background-image: url(RoundedSeparator.svg);
 }
 
-.flex-grid {
-
-}
 .row-container {
-    max-width: 1400px;
+    max-width: 85%;
+    width: 1400px;
     margin: 40px auto;
 }
 .row-link {
@@ -230,8 +228,8 @@ nav.valikko.scrolled {
     box-shadow: 0 2px 11px 0px rgba(0,0,0,.164);
 }
 .valikko .menu {
-    max-width: 1300px;
-    margin: 0 auto;;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .logo {
     float: left;
