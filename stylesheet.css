@@ -4,6 +4,24 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-Light.ttf');
+	font-weight: 100;
+	font-style: normal;
+}
 
 /* ----- COLORS ----- */
 :root {
@@ -53,7 +71,7 @@ body {
     background: #fff;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans';
+    font-family: 'OpenSans';
 }
 
 .btn {
@@ -83,7 +101,7 @@ a.link {
 }
 a.link:hover {
     background-color: orange;
-    color: white;
+    color: white !important;
 }
 
 .some-class {
@@ -111,13 +129,13 @@ section.hero_container {
     top: 38%;
 }
 .slogan_small {
-    font-size: 37px;
+    font-size: 35px;
     margin: 0;
     padding: 0;
 }
 .slogan_big {
-    font-size: 50px;
-    line-height: 48px;
+    font-size: 48px;
+    line-height: 46px;
     margin: 0;
     padding: 0;
 }
@@ -180,19 +198,17 @@ section.hero_container {
 .text {
     margin: 0;
     padding: 10px 20px 20px 20px;
+    color: #585858;
 }
 .text h2 {
     margin: 0 0 10px 0;
     font-weight: 400;
+    color: black;
 }
 .text .date {
     color: #585858;
     margin: 0 0 10px 0;
     font-weight: bold;
-}
-.text p {
-    margin: 0;
-    color: #585858;
 }
 .text .read-more {
     display: inline-block;
@@ -206,6 +222,18 @@ section.hero_container {
 }
 .text .read-more:hover {
     background-color: orange;
+    color: white;
+}
+
+.col.white_text .text {
+    color: white;
+}
+.col.white_text .text a{
+    color: #e4e4e4;
+}
+.col.white_text .text h2 {
+    font-family: 'Sign Painter';
+    font-size: 36px;
     color: white;
 }
 
