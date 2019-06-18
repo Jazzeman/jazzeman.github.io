@@ -77,19 +77,19 @@ body {
 .btn {
     display: inline-block;
     outline: none;
-	padding: 8px 13px;
-	border-radius: 5px;
-	color: white;
-	text-decoration: none;
-	font-family: 'Segoe UI', 'Open Sans';
-	font-weight: 400;
-	font-size: 1rem;
-	border: none;
-	background-color: var(--blue);
-	transition: background-color 0.2s ease;
+		padding: 8px 13px;
+		border-radius: 5px;
+		color: white;
+		text-decoration: none;
+		font-family: 'Segoe UI', 'Open Sans';
+		font-weight: 400;
+		font-size: 1rem;
+		border: none;
+		background-color: var(--blue);
+		transition: background-color 0.2s ease;
 }
 .btn:hover {
-	cursor: pointer;
+		cursor: pointer;
 	/*background-color: var(--darkblue);*/
 }
 
@@ -257,6 +257,8 @@ nav.valikko.scrolled {
     box-shadow: 0 2px 11px 0px rgba(0,0,0,.164);
 }
 .valikko .menu {
+		display: flex;
+		align-items: center;
     width: 1400px;
     max-width: 85%;
     height: 55px;
@@ -279,11 +281,35 @@ nav.valikko.scrolled {
     background-size: 100% 200%;
     transition: background-position 0.2s , color 0.2s;
     transition-timing-function: ease;
-    transform: skew(-15deg);
+    /*transform: skew(-15deg);*/
     outline: 1px solid transparent;
     -webkit-backface-visibility: hidden;
     will-change: transform;
     -webkit-perspective: 1000;
+}
+#tstvalikko > li.menu-item {
+	padding:0 8px;
+}
+#tstvalikko > li.menu-item:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+		top: -12px;
+    background: #fff;
+    display: block;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    left: 50%;
+    position: relative;
+}
+#tstvalikko > li.menu-item.current:after {
+		left: 0;
+		width: 100%;
+}
+#tstvalikko li.menu-item:hover:after {
+		left: 0;
+    width: 100%;
 }
 .scrolled #tstvalikko li.menu-item {
     background-image: linear-gradient(to bottom, #ffffff00 50%, white 50%);
@@ -296,21 +322,21 @@ nav.valikko.scrolled {
     align-items: center;
     justify-content: center;
     height: 55px;
-    padding:0 8px;
     font-family: 'Open Sans';
     font-weight: 500;
     color: white;
     text-decoration:none;
-    transform: skew(15deg);
+    /*transform: skew(15deg);*/
     outline: 1px solid transparent;
     -webkit-backface-visibility: hidden;
     will-change: transform;
     -webkit-perspective: 1000;
 }
+/*
 #tstvalikko li:hover, #tstvalikko li:hover a {
     background-position: 0 -100%;
     color: #ffa500;
-}
+}*/
 #tstvalikko li:hover ul.sub-menu {
     display:block;
     left: auto;
@@ -324,7 +350,7 @@ nav.valikko.scrolled {
     overflow-y: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 99;
-    transform: skew(15deg);
+    /*transform: skew(15deg);*/
     outline: 1px solid transparent;
     -webkit-backface-visibility: hidden;
     will-change: transform;
@@ -333,7 +359,7 @@ nav.valikko.scrolled {
  #tstvalikko ul.sub-menu li.menu-item {
     display: block;
     float: none;
-    transform: skew(0deg);
+    /*transform: skew(0deg);*/
 } #tstvalikko ul.sub-menu li.menu-item a {
     float: none;
     height: 50px;
@@ -361,6 +387,7 @@ nav.valikko.scrolled {
     float: right;
     margin: 0;
     line-height: 55px;
+		width: 400px;
 }
 .infobtn {
     padding: 7px 13px 7px 13px;
