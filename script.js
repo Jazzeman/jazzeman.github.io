@@ -1,9 +1,9 @@
-$(document).ready(function(){    
-    
+$(document).ready(function(){
+
     $('.my-paroller').paroller();
-    
+
     var scroll_pos = 0;
-    $(document).scroll(function() { 
+    $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 5) {
             $(".valikko").addClass("scrolled");
@@ -16,8 +16,8 @@ $(document).ready(function(){
         $("#info").slideUp();
         $("#info2").slideUp();
     });
-    
-    
+
+
     $("#infobutton").mouseover(function () {
         $("#infobutton").addClass("button_open");
         $("#info").stop().slideDown();
@@ -50,4 +50,25 @@ $(document).ready(function(){
         $("#info").slideUp();
         $("#info2").slideUp();
     });
+
+
+/*
+    var svg = document.getElementById("cups");
+    var s = Snap(svg);
+
+    var simpleCup = Snap.select('#simple-cup');
+    var fancyCup = Snap.select('#fancy-cup');
+
+    var simpleCupPoints = simpleCup.node.getAttribute('d');
+    var fancyCupPoints = fancyCup.node.getAttribute('d');
+
+    var toFancy = function(){
+      simpleCup.animate({ d: fancyCupPoints }, 1000, mina.backout, toSimple);
+    }
+
+    var toSimple = function(){
+      simpleCup.animate({ d: simpleCupPoints }, 1000, mina.backout, toFancy);
+    }
+
+    toSimple();*/
 });
