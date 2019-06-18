@@ -188,7 +188,8 @@ section.hero_container {
     width: 32%;
     max-width: 450px;
     min-height: 500px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);*/
+		box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
     border-radius: 6px;
     overflow: hidden;
 }
