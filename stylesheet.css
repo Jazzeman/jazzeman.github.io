@@ -97,10 +97,13 @@ a.link {
     text-decoration: none;
     color: #6f6f6f;
     border-bottom: solid 2px orange;
-    transition: background-color 0.2s ease;
+    background: linear-gradient(0deg, orange 50%, transparent 50%);
+    background-position: top;
+    background-size: 100% 200%;
+    transition: background-position 0.2s ease, color 0.2s ease;
 }
 a.link:hover {
-    background-color: orange;
+    background-position: bottom;
     color: white !important;
 }
 
@@ -294,7 +297,7 @@ nav.valikko.scrolled {
     content: "";
     width: 0%;
     height: 2px;
-		top: -12px;
+	top: -12px;
     background: #fff;
     display: block;
     -webkit-transition: .3s;
@@ -304,11 +307,11 @@ nav.valikko.scrolled {
     position: relative;
 }
 #tstvalikko > li.menu-item.current:after {
-		left: 0;
-		width: 100%;
+	left: 0;
+	width: 100%;
 }
 #tstvalikko li.menu-item:hover:after {
-		left: 0;
+	left: 0;
     width: 100%;
 }
 .scrolled #tstvalikko li.menu-item {
