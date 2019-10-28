@@ -456,3 +456,11 @@ nav.valikko.scrolled {
     padding: 0 20px;
     border-left: solid 1px #e5e5e5;
 }
+
+.fa-search {
+    transition: transform 0.2s ease-in-out;
+}
+.fa-search:hover  {
+    cursor: pointer;
+    transform: rotate(20deg);
+}
