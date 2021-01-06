@@ -1,0 +1,61 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 40, 40);
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+.controls {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 250px;
+    padding: 0 1em 1em 1em;
+    background-color: rgb(255 255 255 / 60%);
+    border-radius: 15px;
+}
+
+.controls .section {
+    border-bottom: solid 1px rgb(255 255 255 / 60%);
+    margin: 1em 0 0 0;
+    padding: 0 0 1em;
+}
+
+.controls h3 {
+    padding: 0;
+    margin: 0 0 0.5em 0;
+    color: #005aff;
+    font-weight: 600;
+}
+
+.controls output {
+    color: #005aff;
+}
+
+.controls .slider_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.controls .sliders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.controls .sliders label {
+    flex: 0 30px;
+}
+
+.controls .sliders input {
+    flex: 0 190px;
+}
